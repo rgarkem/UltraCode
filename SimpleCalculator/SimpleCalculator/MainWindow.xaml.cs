@@ -25,6 +25,11 @@ namespace SimpleCalculator
             InitializeComponent();
         }
 
+        /// <summary>
+        /// The button click Event Handler
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             int result = -1;
