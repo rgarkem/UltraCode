@@ -81,6 +81,12 @@ namespace SimpleCalculator
             return a - b;
         }
 
+        /// <summary>
+        /// Mulitply 2 nums
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         private int Mult(int a, int b)
         {
             return a * b;
