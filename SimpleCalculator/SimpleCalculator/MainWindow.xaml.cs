@@ -30,19 +30,19 @@ namespace SimpleCalculator
             int result = -1;
             if ((bool)this.rbAdd.IsChecked)
             {
-                result = Add(Int32.Parse(this.TB1.Text), Int32.Parse(this.TB2.Text));
+                result = CalcEngine.Add(Int32.Parse(this.TB1.Text), Int32.Parse(this.TB2.Text));
             }
             else if ((bool)this.rbSubtract.IsChecked)
             {
-                result = Sub(Int32.Parse(this.TB1.Text), Int32.Parse(this.TB2.Text));
+                result = CalcEngine.Sub(Int32.Parse(this.TB1.Text), Int32.Parse(this.TB2.Text));
             }
             else if ((bool)this.rbMultiply.IsChecked)
             {
-                result = Mult(Int32.Parse(this.TB1.Text), Int32.Parse(this.TB2.Text));
+                result = CalcEngine.Mult(Int32.Parse(this.TB1.Text), Int32.Parse(this.TB2.Text));
             }
             else if ((bool)this.rbDivide.IsChecked)
             {
-                result = Div(Int32.Parse(this.TB1.Text), Int32.Parse(this.TB2.Text));
+                result = CalcEngine.Div(Int32.Parse(this.TB1.Text), Int32.Parse(this.TB2.Text));
             }
             else 
             {
@@ -54,47 +54,8 @@ namespace SimpleCalculator
         }
 
         private void RadioButton_Checked(object sender, RoutedEventArgs e)
-        {
-            
+        {            
            
-        }
-
-        /// <summary>
-        /// Add 2 nums
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <returns></returns>
-        private int Add(int a, int b)
-        {
-            return a + b;
-        }
-
-        /// <summary>
-        /// sub 2 nums
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <returns></returns>
-        private int Sub(int a, int b)
-        {
-            return a - b;
-        }
-
-        /// <summary>
-        /// Mulitply 2 nums
-        /// </summary>
-        /// <param name="a"></param>
-        /// <param name="b"></param>
-        /// <returns></returns>
-        private int Mult(int a, int b)
-        {
-            return a * b;
-        }
-
-        private int Div(int a, int b)
-        {
-            return a / b;
-        }
+        }        
     }
 }
