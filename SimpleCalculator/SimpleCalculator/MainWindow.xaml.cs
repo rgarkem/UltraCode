@@ -59,11 +59,23 @@ namespace SimpleCalculator
            
         }
 
+        /// <summary>
+        /// Add 2 nums
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         private int Add(int a, int b)
         {
             return a + b;
         }
 
+        /// <summary>
+        /// sub 2 nums
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <returns></returns>
         private int Sub(int a, int b)
         {
             return a - b;
